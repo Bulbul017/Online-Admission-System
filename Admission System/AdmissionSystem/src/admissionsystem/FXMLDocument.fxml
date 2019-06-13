@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="754.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admissionsystem.FXMLDocumentController">
+   <children>
+      <VBox alignment="CENTER" layoutX="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mouseTransparent="true" prefHeight="138.0" prefWidth="877.0" spacing="30.0" style="-fx-background-color: #202020;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="41.0" prefWidth="224.0" text="University Of ABC" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label prefHeight="24.0" prefWidth="168.0" text="Admission System" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="21.0" />
+               </font>
+            </Label>
+         </children></VBox>
+      <TabPane layoutY="137.0" prefHeight="617.0" prefWidth="877.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="137.0">
+        <tabs>
+          <Tab text="Register">
+               <content>
+                  <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="877.0" spacing="8.0" style="-fx-background-color: #808080;">
+                     <children>
+                        <TextField fx:id="hscRollTextField" alignment="CENTER" prefHeight="39.0" prefWidth="245.0" promptText="HSC Roll">
+                           <effect>
+                              <Reflection />
+                           </effect>
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="19.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="errorInHscRoll" prefHeight="28.0" prefWidth="190.0" textFill="#f5f2f2">
+                           <font>
+                              <Font name="Times New Roman Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="hscPassingYearTextField" alignment="CENTER" prefHeight="37.0" prefWidth="245.0" promptText="HSC Passing Year">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="18.0" />
+                           </font>
+                           <effect>
+                              <Reflection />
+                           </effect>
+                        </TextField>
+                        <Label prefHeight="27.0" prefWidth="271.0" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <MenuButton mnemonicParsing="false" prefHeight="54.0" prefWidth="249.0" text="Board" textFill="#949494">
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#barisalBoardAction" text="Barisal" />
+                              <MenuItem mnemonicParsing="false" onAction="#dinajpurBoardAction" text="Dinajpur" />
+                            <MenuItem mnemonicParsing="false" onAction="#dhakaBoardAction" text="Dhaka" />
+                              <MenuItem mnemonicParsing="false" onAction="#rajshahiBoardAction" text="Rajshahi" />
+                            <MenuItem mnemonicParsing="false" onAction="#jessoreBoardAction" text="Jessore" />
+                              <MenuItem mnemonicParsing="false" onAction="#sylhetBoardAction" text="Sylhet" />
+                              <MenuItem mnemonicParsing="false" onAction="#chittagongBoardAction" text="Chittagong" />
+                          </items>
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="30.0" />
+                           </font>
+                           <effect>
+                              <Reflection />
+                           </effect>
+                        </MenuButton>
+                        <Label />
+                        <TextField fx:id="sscRollTextField" alignment="CENTER" prefHeight="37.0" prefWidth="250.0" promptText="SSC Roll">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="20.0" />
+                           </font>
+                           <effect>
+                              <Reflection />
+                           </effect>
+                        </TextField>
+                        <Label fx:id="errorInSscRoll" prefHeight="30.0" prefWidth="179.0" textFill="#f5f0f0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="serverTextField" alignment="CENTER" prefHeight="46.0" prefWidth="304.0" promptText="Server Address : 127.0.0.1">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="20.0" />
+                           </font>
+                           <effect>
+                              <Reflection />
+                           </effect>
+                        </TextField>
+                        <Label fx:id="ipAddressLabel" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label />
+                        <Button fx:id="submitButton" mnemonicParsing="false" onAction="#submitButtonOnAction" prefHeight="43.0" prefWidth="107.0" text="Submit">
+                           <font>
+                              <Font name="Times New Roman Bold" size="23.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </content>
+          </Tab>
+            <Tab fx:id="ar" text="Already registered">
+               <content>
+                  <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" spacing="45.0" style="-fx-background-color: #808080;">
+                     <children>
+                        <Label text="Enter your admit card roll" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman Bold" size="27.0" />
+                           </font>
+                           <effect>
+                              <Reflection fraction="0.0" topOpacity="0.0" />
+                           </effect>
+                        </Label>
+                        <TextField fx:id="checkAdmitCardRoll" layoutX="302.0" layoutY="243.0" prefHeight="47.0" prefWidth="294.0" promptText="Admit Card Roll">
+                           <font>
+                              <Font name="Times New Roman Bold Italic" size="25.0" />
+                           </font>
+                           <effect>
+                              <Reflection fraction="0.0" topOpacity="0.0" />
+                           </effect>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#checkSubmitOnAction" style="-fx-background-color: transparent; -fx-border-color: white;" text="Submit" textFill="#2f2d2d">
+                           <font>
+                              <Font name="Times New Roman Bold" size="19.0" />
+                           </font>
+                           <effect>
+                              <Reflection fraction="0.0" topOpacity="0.0" />
+                           </effect>
+                        </Button>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

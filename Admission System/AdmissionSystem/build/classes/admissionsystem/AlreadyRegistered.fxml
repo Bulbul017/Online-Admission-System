@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="175.0" prefWidth="365.0" style="-fx-background-color: Black;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="admissionsystem.AlreadyRegisteredController">
+   <children>
+      <Label layoutX="56.0" layoutY="50.0" text="You have registered  already!" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="88.0" text="Go to 'Already Registered' tab." textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
