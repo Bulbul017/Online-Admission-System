@@ -9,3 +9,11 @@ It's a simple JAVA project which deals with online registration procedures for a
 - User friendly GUI.
 - The design of the project is based on Client-Server module of networking.
 
+# Installation
+- Platform : Windows,Linux.
+- Language : JAVA (JDK 1.8).
+- Tool     : Netbeans IDE,Scene builder.
+- Application type : JAVA FXML application.
+
+
+
